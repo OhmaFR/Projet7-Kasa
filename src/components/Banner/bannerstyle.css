@@ -1,0 +1,164 @@
+.banner_box-home {
+    max-width: 1440px;
+    position: relative;
+    height: 180px;
+    margin: 30px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner_box-home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/Banniere-accueil.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+    border-radius: 25px;
+}
+
+.banner_box-home .banner_para {
+    z-index: 2;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 68px;
+}
+
+
+.banner_box-about {
+    position: relative;
+    height: 200px;
+    margin: 30px 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner_box-about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../images/Banniere-apropos.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(70%);
+    border-radius: 25px;
+}
+
+.banner_box-about .banner_para {
+    display: none;
+}
+
+
+
+                    /* MediaQ 992px */
+@media (max-width: 992px) {
+    .banner_box-home {
+        height: 165px;
+        margin: 30px;
+    }
+
+    .banner_box-home::before {
+        border-radius: 22px;
+    }
+
+    .banner_para {
+        font-size: 2rem;
+    }
+
+    .banner_box-about {
+        height: 220px;
+        margin: 30px;
+    }
+
+    .banner_box-about::before {
+        border-radius: 22px;
+    }
+}
+
+
+
+/* MediaQ 576px */
+
+@media (max-width: 576px) {
+    .banner_box-home {
+        height: 110px;
+        margin: 15px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .banner_box-home::before {
+        border-radius: 10px;
+    }
+
+    .banner_para {
+        margin-left: 10px;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .banner_box-about {
+        height: 265px;
+        margin: 15px;
+    }
+
+
+    .banner_box-about::before {
+        border-radius: 10px;
+        background: url(../../images/Banniere-apropos2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+
+
+                /* MediaQ 768px */
+
+@media (max-width: 768px) {
+    .banner_box-home {
+        height: 150px;
+        margin: 20px;
+    }
+
+    .banner_box-home::before {
+        border-radius: 18px;
+    }
+
+    .banner_para {
+        font-size: 1.8rem;
+    }
+
+
+    .banner_box-about {
+        height: 250px;
+        margin: 20px;
+    }
+
+
+    .banner_box-about::before {
+        border-radius: 18px;
+    }
+
+}
+
+

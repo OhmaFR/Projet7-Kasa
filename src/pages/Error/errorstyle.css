@@ -1,0 +1,66 @@
+.err_block {
+    width: 92%;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #FF6060;;
+    -webkit-animation: SHOW-BOX 2s ease-in-out;
+    -moz-animation: SHOW-BOX 2s ease-in-out;
+    -o-animation: SHOW-BOX 2s ease-in-out;
+    animation: SHOW-BOX 2s ease;
+}
+.err_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+.err_box .err_number {
+    font-size: 14rem;
+    font-weight: 900;
+}
+.err_message {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.err_liens {
+    color: #FF6060;;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+
+
+                         /* MediaQ 768px */
+@media (max-width: 768px) {
+    .err_block .err_box .err_number {
+        font-size: 10rem;
+    }
+    .err_block .err_box .err_message {
+        font-size: 1.6rem;
+    }
+}
+
+                        /* MediaQ 576px */
+@media (max-width: 576px) {
+    .err_block .err_box .err_number {
+        font-size: 8rem;
+    }
+
+    .err_block .err_box .err_message {
+        font-size: 1.2rem;
+    }
+
+    .err_liens {
+        text-align: center;
+    }
+}

@@ -1,0 +1,30 @@
+.tag_thing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF6060;
+    color: white;
+    border-radius: 20px;
+    padding: 3px 25px;
+    margin: 10px 10px 0 0;
+}
+
+
+
+                            /* MediaQ 768px */
+@media (max-width: 768px) {
+    .tag_thing {
+        padding: 3px 15px;
+        margin: 10px 5px 0 0;
+        font-size: 0.9rem;
+    }
+}
+
+                            /* MediaQ 576px */
+@media (max-width: 576px) {
+    .tag_thing {
+        padding: 3px 10px;
+        margin: 8px 3px 0 0;
+        font-size: 0.7rem;
+    }
+}
