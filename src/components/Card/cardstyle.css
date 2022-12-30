@@ -7,7 +7,6 @@
     align-items: center;
     flex-flow: row wrap;
     border-radius: 25px;
-    animation: SHOW-BOX 3s ease-in-out;
 }
 
 .card_block {
